@@ -1,0 +1,45 @@
+html { 
+  background: url(./images/back.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+
+h1{
+  width: 550px;
+  height: 50px;
+  background-color: rgb(238, 222, 129);
+  border-radius: 25px;
+  margin: 20px auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+div#game_board {
+  background:  rgb(238, 222, 129);
+  border: rgb(245, 6, 185) 2px solid;
+  width: 800px;
+  height: 540px;
+  padding: 13px auto  ;
+  margin: 40px auto;
+  opacity: 0.9;
+}
+
+div#game_board > div{
+  background: url(./images/cover.jpg) center no-repeat;
+  border: #000 1px solid;
+  width: 71px;
+  height: 71px;
+  float: left;
+  margin: 10px;
+  padding: 20px;
+  font-size: 64px;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+#audio {
+    float: right;
+}
