@@ -3,6 +3,7 @@ var tail_array = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F',
 var memory_values = [];
 var tile_ids = [];
 var tile_flipped = 0;
+var winSound = new Audio("./music/guitar.mp3")
 
 const click = new Audio("./music/claps.mp3");
 document.getElementById('game_board').addEventListener("click", e => click.play());
@@ -26,6 +27,7 @@ function newBoard(){
     output += '<div id="tile_'+i+'" onclick="memoryFlipTile(this,\''+tail_array[i]+'\')"></div>';
   }
   document.getElementById('game_board').innerHTML = output;
+  winSound.play();
 }
 
 function memoryFlipTile(tile,val){
